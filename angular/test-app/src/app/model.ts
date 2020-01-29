@@ -4,11 +4,11 @@
 //     user: "Ashish",
 //     items: [{ action: "Buy Flowers", done: false},
 //             { action: "Get Shoes", done: false},
-//             { action: "Collect Tickets", done: true},
+//             { action: "Collect Tickets", done: false},
 //             { action: "Call Joe", done: false}]
 // }
 
-//---------------------------------------------------------------------//
+// ---------------------------------------------------------------------//
 export class Model {
     user;
     items;
