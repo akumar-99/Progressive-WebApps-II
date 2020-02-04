@@ -24,4 +24,12 @@ export class AppComponent {
   getName() {
     return this.model.user;
   }  
+  getItems() {
+    return this.model.items;
+  }
+  addItem(item){
+    // this.model.items.push(new TodoItem(item, false));
+    this.model.items.push({action:item, done:false});
+
+  }
 }
