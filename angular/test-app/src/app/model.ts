@@ -14,10 +14,10 @@ export class Model {
     items;
     constructor() {
         this.user = "Ashish";
-        this.items = [new TodoItem("Buy Flowers", false,"0000 hrs"),
-                      new TodoItem("Get Shoes", false,"0000 hrs"),
-                      new TodoItem("Collect Tickets", false,"0000 hrs"),
-                      new TodoItem("Call Joe", false,"0000 hrs")]
+        this.items = [new TodoItem("Buy Flowers", false,"00:00"),
+                      new TodoItem("Get Shoes", false,"00:00"),
+                      new TodoItem("Collect Tickets", false,"00:00"),
+                      new TodoItem("Call Joe", false,"00:00")]
     }
 }
 

@@ -46,7 +46,7 @@
     <h3 class="bg-primary text-white p-3">{{ getName()}}'s To Do List</h3>
   
     <input type="text" class="form-control" placeholder="Enter Task Description" #todoText />
-    <input type="text" class="form-control" placeholder="Enter Task Time" #todoTime />
+    <input type="time" class="form-control" #todoTime />
     <button class="btn btn-primary mt-1" (click)="addItem(todoText.value, todoTime.value); todoText.value = ''; todoTime.value = ''">Add</button>
 
     <table class="table table-striped table-bordered">
