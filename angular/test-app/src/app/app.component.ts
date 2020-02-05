@@ -25,11 +25,16 @@ export class AppComponent {
     return this.model.user;
   }  
   getItems() {
-    return this.model.items;
+    // return this.model.items;
+    return this.model.items.filter(items => !items.done);
   }
-  addItem(item){
-    // this.model.items.push(new TodoItem(item, false));
-    this.model.items.push({action:item, done:false});
-
+  addItem(item, task_time){
+    if(item!=""){
+      // this.model.items.push(new TodoItem(item, false));
+      this.model.items.push({action:item, done:false, time:task_time});
+    } 
+    else {
+      window.alert("EMPTY INPUT");
+    }
   }
 }
