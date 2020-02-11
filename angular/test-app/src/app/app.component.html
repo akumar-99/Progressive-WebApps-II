@@ -47,8 +47,8 @@
   
     <input type="text" class="form-control" placeholder="Enter Task Description" #todoText />
     <input type="time" class="form-control" #todoTime />
-    <button class="btn btn-primary mt-1" (click)="addItem(todoText.value, todoTime.value); todoText.value = ''; todoTime.value = ''">Add</button>
-
+    <button class="btn btn-primary mt-1" (click)="addItem(todoText.value, todoTime.value); todoText.value = ''; todoTime.value = ''; store();">Add</button>
+    <button class="btn btn-primary mt-1" (click)="load();">Load</button>
     <table class="table table-striped table-bordered">
         <thead>
             <tr>
