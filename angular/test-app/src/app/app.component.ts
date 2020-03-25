@@ -37,4 +37,18 @@ export class AppComponent {
       window.alert("EMPTY INPUT");
     }
   }
+  store(){
+    if(localStorage){
+      localStorage.itemObject = JSON.stringify(this.model.items);
+      console.log("Data Stored");
+    }
+    else {
+      console.log("No local Storage available")
+    }
+  }
+  load(){
+    if (localStorage){
+      this.model.items = JSON.parse(localStorage.itemObject);
+    }
+  }
 }
